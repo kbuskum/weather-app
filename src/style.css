@@ -14,7 +14,7 @@ li {
   margin-top: 10px auto;
   margin-bottom: 10px auto;
   padding: 20px;
-  background-color: deepskyblue;
+  background: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
 }
 
 .update {
@@ -29,7 +29,7 @@ li {
 .row-cols-2 {
   border: 1px;
   border-radius: 25px;
-  background-image: linear-gradient(rgba(0, 8, 51, 0.2), rgba(0, 8, 51, 0.227));
+  background: linear-gradient(rgba(0, 8, 51, 0.301), rgba(0, 8, 51, 0.199));
   margin: 0;
   padding: 0;
 }
@@ -76,7 +76,7 @@ li {
 .row-weekly-forecast {
   border: 1px;
   border-radius: 25px;
-  background-image: linear-gradient(rgba(0, 8, 51, 0.2), rgba(0, 8, 51, 0.227));
+  background: linear-gradient(rgba(0, 8, 51, 0.301), rgba(0, 8, 51, 0.199));
   justify-content: space-evenly !important;
   display: flex;
   flex-wrap: wrap;
