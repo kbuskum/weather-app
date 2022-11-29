@@ -19,7 +19,7 @@ small {
   display: block;
   font-size: 12px;
   font-family: "Roboto Mono", monospace;
-  color: #e3b1ae;
+  color: rgba(255, 255, 255, 0.678);
   text-align: center;
 }
 
