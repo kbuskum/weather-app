@@ -7,6 +7,22 @@ li {
   list-style: none;
 }
 
+a {
+  font-size: 12px;
+  font-family: "Roboto Mono", monospace;
+  color: #8ef6e4;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+small {
+  display: block;
+  font-size: 12px;
+  font-family: "Roboto Mono", monospace;
+  color: #edb1f1;
+  text-align: center;
+}
+
 .container {
   border: 1px;
   border-radius: 15px;
@@ -126,13 +142,4 @@ li {
   cursor: pointer;
   color: rgba(229, 229, 229, 0.737);
   padding-left: 10px;
-}
-
-.link {
-  display: block;
-  font-family: "Roboto Mono", monospace;
-  color: rgba(255, 255, 255, 0.678);
-  text-align: center;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
 }
