@@ -104,9 +104,10 @@ li {
 #search-form {
   width: 340px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(rgba(0, 8, 51, 0.2), rgba(0, 8, 51, 0.227));
   border-radius: 60px;
   backdrop-filter: blur(4px) saturate(180%);
+  color: white;
 }
 
 #search-form input {
@@ -115,7 +116,7 @@ li {
   outline: none;
   padding: 8px 40px 8px 50px;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.678);
+  color: white;
 }
 
 #search-form button {
