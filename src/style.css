@@ -1,0 +1,128 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  border: 1px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin-top: 10px auto;
+  margin-bottom: 10px auto;
+  padding: 20px;
+  background-color: deepskyblue;
+}
+
+.update {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.678);
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.row-cols-2 {
+  border: 1px;
+  border-radius: 25px;
+  background-image: linear-gradient(rgba(0, 8, 51, 0.2), rgba(0, 8, 51, 0.227));
+  margin: 0;
+  padding: 0;
+}
+
+.col-city {
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.col-temp {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.units {
+  color: rgba(255, 255, 255, 0.678);
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+  left: -30px;
+}
+
+.col-description {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.col-icon {
+  display: block;
+  text-align: right;
+  padding-right: 30px;
+}
+.row-weekly-forecast {
+  border: 1px;
+  border-radius: 25px;
+  background-image: linear-gradient(rgba(0, 8, 51, 0.2), rgba(0, 8, 51, 0.227));
+  justify-content: space-evenly !important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  padding: 0;
+  color: white;
+}
+
+.forecast-day {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.forecast-temp {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.min-temp {
+  color: rgba(255, 255, 255, 0.678);
+}
+
+#search-form {
+  width: 340px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 60px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+
+#search-form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px 40px 8px 50px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.678);
+}
+
+#search-form button {
+  width: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgba(229, 229, 229, 0.737);
+  padding-left: 10px;
+}
