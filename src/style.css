@@ -104,14 +104,14 @@ li {
 #search-form {
   width: 340px;
   display: inline-block;
-  background: linear-gradient(rgba(0, 8, 51, 0.2), rgba(0, 8, 51, 0.227));
+  background: linear-gradient(rgba(0, 8, 51, 0.301), rgba(0, 8, 51, 0.199));
   border-radius: 60px;
   backdrop-filter: blur(4px) saturate(180%);
   color: white;
 }
 
 #search-form input {
-  background: transparent;
+  background: none;
   border: none;
   outline: none;
   padding: 8px 40px 8px 50px;
