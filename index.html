@@ -23,17 +23,12 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
-
   <body>
     <div class="container">
-      <div class="update">
-        Last Updated:
-        <span id="date"></span>
-      </div>
-      <form id="search-form">
+      <form id="city-search-bar">
         <input
           type="search"
-          placeholder="Search for city"
+          placeholder="Search for city.."
           autocomplete="off"
           id="city-input"
         />
@@ -41,26 +36,41 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
-      <div class="row row-cols-2">
-        <div class="col-city">
-          <h1 id="city"></h1>
+
+      <div class="weather-content">
+        <div class="last-updated">
+          Last updated:
+          <span id="current-time"></span>
         </div>
-        <div class="col-temp">
-          <div>
-            <span id="temperature"></span>
-            <span class="units">°C</span>
+        <div class="row row-cols-2">
+          <h1 class="city">
+            <span id="current-city"></span>
+          </h1>
+          <div class="temp-content">
+            <span id="current-temp"></span><span class="temp-unit">°C</span>
+          </div>
+          <div id="current-description"></div>
+          <div class="icon-image">
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="Icon"
+              id="icon"
+            />
           </div>
         </div>
-        <div class="col-description">
-          <ul>
-            <li class="description" id="description"></li>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>m/s</li>
-            <li>Feels like: <span id="feels-like"></span></li>
-          </ul>
-        </div>
-        <div class="col-icon">
-          <img src="" alt="Icon" id="icon" />
+        <div class="row justify-content-evenly more-details">
+          <div class="col-3 more-details-boxes">
+            Humidity
+            <div class="inside" id="humidity-content">%</div>
+          </div>
+          <div class="col-3 more-details-boxes">
+            Wind
+            <div class="inside" id="wind-content">m/s</div>
+          </div>
+          <div class="col-3 more-details-boxes">
+            Feels Like
+            <div class="inside" id="feels-like-temp">°C</div>
+          </div>
         </div>
       </div>
 
@@ -69,11 +79,15 @@
           <div class="col-2 forecast">
             <div class="weather-forecast-day"></div>
             <div class="forecast-image">
-              <img src="" alt="" width="42" />
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt=""
+                width="42"
+              />
             </div>
-            <div class="forecast-temp">
-              <span class="max-temp"></span>
-              <span class="min-temp"></span>
+            <div class="weather-forecast-temp">
+              <span class="forecast-max-temp"></span>
+              <span class="forecast-min-temp"></span>
             </div>
           </div>
         </div>
@@ -81,11 +95,17 @@
 
       <small>
         <a href="https://github.com/kbuskum/weather-app.git" target="_blank"
-          >Open-source code</a
-        >
+          >Open-source code
+        </a>
+
         by Kristine Buskum
       </small>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="src/app.js"></script>
   </body>
 </html>
