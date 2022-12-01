@@ -11,6 +11,12 @@ small {
   font-family: "Roboto Mono", monospace;
   display: block;
   text-align: center;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #8bffff;
 }
 
 .container {
