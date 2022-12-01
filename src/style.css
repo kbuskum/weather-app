@@ -11,7 +11,7 @@ li {
   border: 1px;
   border-radius: 15px;
   max-width: 600px;
-  background-color: deepskyblue;
+  background: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
   padding: 30px 20px 100px 20px;
 }
 
