@@ -91,7 +91,6 @@ function displayAppContent(response) {
   feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like) + "°";
 
   getForecast(response.data.coord);
-  backgroundChange(response.data.weather[0].icon);
 }
 
 function search(city) {
