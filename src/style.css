@@ -46,7 +46,7 @@ a {
 .col-city {
   font-size: 40px;
   font-weight: 400;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 40px;
 }
 
@@ -71,10 +71,13 @@ a {
   font-size: 15px;
   font-weight: 300;
   text-align: left;
+  padding-bottom: 15px;
 }
 
 .description {
   text-transform: capitalize;
+  font-size: 20px;
+  padding-bottom: 15px;
 }
 
 .col-icon {
