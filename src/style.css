@@ -14,7 +14,7 @@ small {
   font-size: 12px;
 }
 
-a {
+small a {
   text-decoration: none;
   color: #8bffff;
 }
@@ -94,8 +94,14 @@ a {
   flex-wrap: wrap;
   margin-bottom: 40px;
   margin-top: 20px;
-  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: white;
+  text-align: center;
+}
+
+.weather-forecast-day:hover {
+  opacity: 0.7;
 }
 
 .forecast-day {
