@@ -4,6 +4,7 @@
 }
 
 body {
+  background: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

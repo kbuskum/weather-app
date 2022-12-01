@@ -91,40 +91,6 @@ function displayAppContent(response) {
   feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like) + "°";
 
   getForecast(response.data.coord);
-  backgroundChange(response.data.weather[0].icon);
-}
-
-function backgroundChange(icon) {
-  if (icon === "01d" || icon === "02d") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(67.6deg, rgb(225, 242, 254) -2.8%, rgb(193, 224, 250) 44.6%, rgb(19, 116, 197) 102.4%)";
-  } else if (icon === "02n" || icon === "03n" || icon === "04n") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(1.3deg, rgb(91, 117, 163) 11.4%, rgb(68, 98, 128) 77%)";
-  } else if (icon === "04d" || icon === "03d") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(109.6deg, rgb(78, 112, 157) 11.2%, rgb(137, 164, 199) 65%, rgb(205, 213, 224) 100.2%)";
-  } else if (icon === "01n") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(109.6deg, rgb(27, 27, 79) 11.2%, rgb(120, 201, 244) 100.2%)";
-  } else if (icon === "09n" || icon === "09d") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%)";
-  } else if (icon === "11d" || icon === "11n") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(to right, #868f96 0%, #596164 100%)";
-  } else if (icon === "10n" || icon === "10d") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%)";
-  } else if (icon === "50d") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(179.7deg, rgb(197, 214, 227) 2.9%, rgb(144, 175, 202) 97.1%)";
-  } else if (icon === "50n") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(to right, #868f96 0%, #596164 100%)";
-  } else if (icon === "13d" || icon === "13n") {
-    document.querySelector("body").style.backgroundColor =
-      "linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%)";
 }
 
 function search(city) {
