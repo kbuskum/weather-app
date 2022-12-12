@@ -38,7 +38,7 @@ small a {
 
 .city {
   color: white;
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: left;
   padding-left: 50px;
 }
@@ -148,12 +148,11 @@ small a {
   color: rgba(229, 229, 229, 0.737);
   position: relative;
   text-align: left;
-  top: -10px;
+  top: -15px;
   text-transform: capitalize;
   padding-left: 50px;
 }
 
 #current-temp {
   font-size: 60px;
-  bottom: -60px;
 }
